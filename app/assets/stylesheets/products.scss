@@ -1,0 +1,45 @@
+// Place all the styles related to the products controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+.grid img { width: 180px;
+  height: 180px;
+}
+
+.container { margin-left: 100px;
+  margin-right: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.grid { border-radius: 3px;
+  border: 1px solid gray;
+  width: 250px;
+  margin: 10px;
+  padding: 5px 5px 20px 5px;
+}
+.item_name  {
+  margin-left: 10px;
+  margin-right: 10px;
+  font-size: 18px;
+
+}
+
+.price {
+  margin-left: 10px;
+  margin-right: 10px;
+  font-size: 12px;
+}
+
+.clearance {
+  color: red;
+  font-weight: bold;
+}
+
+.btn {
+  border: 1px solid gray;
+  border-radius: 3px;
+  padding: 6px;
+  margin-left: 10px;
+}

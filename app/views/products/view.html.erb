@@ -1,0 +1,22 @@
+  <div class="container-fluid">
+    <ul>
+      <li>item:<%= @product.item %></li>
+      <li>description:<%= @product.description %></li>
+      <li>price:
+        <% if @product.condition == "good" %> <span class="clearance">CLEARANCE!</span>
+        <%= number_to_currency @product.price.to_i * 0.9 %>
+      <% elsif @product.condition == "average" %> <span class="clearance">CLEARANCE!</span>
+        <%= number_to_currency @product.price.to_i * 0.8 %>
+      <% else %>
+        <%= number_to_currency @product.price %>
+      <% end %></li>
+      <li>condition:<%= @product.condition %></li>
+      <li>dimension_W: <%= @product.dimension_w %></li>
+      <li>desciption_L:<%= @product.dimension_l %></li>
+      <li>desctiption_H:<%= @product.dimension_h %></li>
+      <li><%= image_tag "products/#{@product.img_file}.jpg" %></li>
+      <li>quantity:<%= @product.quantity %></li>
+      <li>category: <%= @product.category %></li>
+    </ul>
+
+  </div>
